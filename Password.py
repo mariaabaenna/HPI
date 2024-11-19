@@ -42,7 +42,7 @@ if  8 <= len(password):
     if not re.search(r"\d", password): #Find some number
         number = False
         print("The password must contain at least one number.")
-    if not re.search(r"[!@#\$%\^&\*\(\),\.\?\\:\{\}\|<>\[\]/]", password): #Search for special characters
+    if not re.search(r"[!@#\$%\^&\*\(\),\.\?\\:\{\}\|<>\[\]/-_ç]", password): #Search for special characters
         special = False
         print("The password must contain at least one special character.")
         
