@@ -21,7 +21,7 @@
 
 import re
 
-print("Password meets the requirements to be considered secure")
+print("Password meets the requirements to be considered secure?")
 password = input("Enter your password:")
 
 #The following allows us to set some boolean values that we will change whether the password meets the requirement or not.
@@ -38,7 +38,7 @@ if  8 <= len(password):
         print("Password must contain at least one capital letter.")
     if not re.search(r"[a-z]", password): #Find lowercase letters
         lowercase_letters = False
-        print("Password must contain at least one lowercase letter.")
+        print("Password must contain at least one lowercase.")
     if not re.search(r"\d", password): #Find some number
         number = False
         print("The password must contain at least one number.")
